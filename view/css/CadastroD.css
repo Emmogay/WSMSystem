@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: quicksand;
+    font-size: 12px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00e170, #00aaff);
+    overflow: hidden;
+}
+
+.form-div {
+    backdrop-filter: blur(13px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 16px;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 #333333;
+    animation: backInLeft 1s;
+
+}
+
+@keyframes backInRight{
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+
+}
+
+.form-div h1 {
+    font-size: 18px;
+    color: rgb(0, 16, 52);
+}
+
+.legenda {
+    color: rgb(0, 16, 52);
+}
+
+.cadastrar {
+    width: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.cadastro-input {
+    width: 100%;
+    padding: 5px 0 5px 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    border-color: rgb(0, 16, 52);
+
+}
+
+.cadastrar i {
+    transform: translateX(2px) translateY(-20px);
+    font-size: 14px;
+    color: rgb(0, 16, 52);
+}
+
+.cadastro-input::placeholder {
+    font-size: 14px;
+    transform: translateX(2px);
+    color: rgb(0, 16, 52);
+    transition: 0.5s;
+
+}
+
+.cadastro-input:focus {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(0, 16, 52);
+    
+
+}
+
+.cadastro-input:focus::placeholder {
+    font-size: 10px;
+}
+
+.botao-send {
+    width: 100%;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00ff00, #00aaff);
+    padding: 8px;
+    color: rgb(0, 16, 52);
+    border: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-send:hover {
+    transform: scale(1.1);
+}
+
+.botao-send:active {
+    background: linear-gradient(135deg, #00b100, #0072ab);
+
+}

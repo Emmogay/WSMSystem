@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WSMSystem</title>
+        <link href="/view/css/CadastroD.css" type="text/css" rel="stylesheet">
+        <!--Link dos icones-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Link dad animaçoes-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <script src="/scripts/Login.js"></script>
+    </head>
+
+    <body> 
+        <div class="form-div"> <!--Criaçâo do formulário-->
+            <h1>WSMSystem</h1>
+            <p class="legenda">Bem vinde! coloque suas informações de login:</p>
+            <form class="cadastrar">
+                <input class="cadastro-input" type="text" id="user-name" placeholder="Nome" autocomplete="off" autocapitalize="on">
+                <i class="bx bx-user-plus"></i> 
+                <input class="cadastro-input" type="text" id="user-cpf" name="cpf" placeholder="CPF" autocomplete="off" maxlength="11" >
+                <i class="bx bx-id-card"></i>
+                <input class="cadastro-input" type="text" id="user-nasc" placeholder="Data" autocomplete="off" onfocus="(this.type='date')"  
+                onblur="(this.type='text')">
+                <i class="bx bx-calendar"></i>
+                <input class="cadastro-input" type="email" id="user-input" name="user" placeholder="Email" autocomplete="off">
+                <i class="bx bx-mail-send"></i>
+                <input class="cadastro-input" type="password" id="pass-input" name="passW" placeholder="Senha" autocomplete="off">
+                <i class="bx bx-lock-alt"></i>
+                <input class="cadastro-input"type="password" id="pass-confirm" name="passWC" placeholder="Confirme a senha" autocomplete="off">
+                <i class="bx bx-lock-alt"></i>
+
+                <input class="botao-send" type="submit" id="botao-cadastrar" placeholder="Enviar">
+            </form>
+        </div><!--Formulário concluido-->
+    </body>
+</html>

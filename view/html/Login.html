@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WSMSystem</title>
+        <link href="/view/css/Login.css" type="text/css" rel="stylesheet">
+        <!--Link dos icones-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Link dad animaçoes-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <script src="/scripts/Login.js"></script>
+    </head>
+
+    <body> 
+        <div class="form-div"> <!--Criaçâo do formulário-->
+            <h1>WSMSystem</h1>
+            <p class="legenda">Bem vinde! coloque suas informações de login:</p>
+            <form class="login">
+                <input class="email-input" type="email" id="user-input" name="user" placeholder="Email" autocomplete="off">
+                <i class="bx bx-mail-send"></i>
+                <input class="senha-input" type="password" id="pass-input" name="passW" placeholder="Senha" autocomplete="off">
+                <i class="bx bx-lock-alt"></i>
+                    
+                <div class="link-senha">
+                    <a class="links" href="CadastroD.html">Primeira vez aqui?</a>
+                    <a class="links" href="Redefinir.html">Esqueceu a senha?</a>
+                </div>
+
+                <input class="botao-send" type="submit" id="botao-logar" placeholder="Enviar">
+            </form>
+        </div><!--Formulário concluido-->
+    </body>
+</html>
