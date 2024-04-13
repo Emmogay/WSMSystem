@@ -16,10 +16,10 @@
         <div class="form-div"> <!--Criaçâo do formulário-->
             <h1>WSMSystem</h1>
             <p class="legenda">Bem vinde! coloque suas informações de login:</p>
-            <form class="login">
-                <input class="email-input" type="email" id="user-input" name="user" placeholder="Email" autocomplete="off">
+            <form class="login" method="post" action="Wow.php">
+                <input class="email-input" type="email" id="user-input-log" placeholder="Email" autocomplete="off">
                 <i class="bx bx-mail-send"></i>
-                <input class="senha-input" type="password" id="pass-input" name="passW" placeholder="Senha" autocomplete="off">
+                <input class="senha-input" type="password" id="pass-input-log" placeholder="Senha" autocomplete="off">
                 <i class="bx bx-lock-alt"></i>
                     
                 <div class="link-senha">
@@ -27,7 +27,7 @@
                     <a class="links" href="Redefinir.html">Esqueceu a senha?</a>
                 </div>
 
-                <input class="botao-send" type="submit" id="botao-logar" placeholder="Enviar">
+                <input class="botao-send" type="submit" id="botao-logar" placeholder="Enviar" onclick="logar()">
             </form>
         </div><!--Formulário concluido-->
     </body>

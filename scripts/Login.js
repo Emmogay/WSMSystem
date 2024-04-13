@@ -1,5 +1,11 @@
-var cpf = document.querySelector("#user-cpf");
+function logar(){
+    var emailLog = document.getElementById('user-input-log').value;
+    var senhaLog = document.getElementById('pass-input-log').value;
 
-cpf.addEventListener("blur", function(){
-   if(cpf.value) cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
-});
+    if (emailLog == 'emmogay@gmail.com' && senhaLog == 'emmogay'){
+        alert('bem vindo emmogay');
+    }else {
+        alert ('emmogay?');
+    }
+
+};

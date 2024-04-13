@@ -16,19 +16,19 @@
         <div class="form-div"> <!--Criaçâo do formulário-->
             <h1>WSMSystem</h1>
             <p class="legenda">Bem vinde! coloque suas informações de login:</p>
-            <form class="cadastrar">
-                <input class="cadastro-input" type="text" id="user-name" placeholder="Nome" autocomplete="off" autocapitalize="on">
+            <form class="cadastrar" method="post" action="Wow.php">
+                <input class="cadastro-input" type="text" id="user-name" name="nome" placeholder="name" autocomplete="off" autocapitalize="on">
                 <i class="bx bx-user-plus"></i> 
                 <input class="cadastro-input" type="text" id="user-cpf" name="cpf" placeholder="CPF" autocomplete="off" maxlength="11" >
                 <i class="bx bx-id-card"></i>
-                <input class="cadastro-input" type="text" id="user-nasc" placeholder="Data" autocomplete="off" onfocus="(this.type='date')"  
+                <input class="cadastro-input" type="text" id="user-nasc" name="data" placeholder="data" autocomplete="off" onfocus="(this.type='date')"  
                 onblur="(this.type='text')">
                 <i class="bx bx-calendar"></i>
-                <input class="cadastro-input" type="email" id="user-input" name="user" placeholder="Email" autocomplete="off">
+                <input class="cadastro-input" type="email" id="user-input" name="email" placeholder="Email" autocomplete="off">
                 <i class="bx bx-mail-send"></i>
-                <input class="cadastro-input" type="password" id="pass-input" name="passW" placeholder="Senha" autocomplete="off">
+                <input class="cadastro-input" type="password" id="pass-input" name="senha" placeholder="Senha" autocomplete="off">
                 <i class="bx bx-lock-alt"></i>
-                <input class="cadastro-input"type="password" id="pass-confirm" name="passWC" placeholder="Confirme a senha" autocomplete="off">
+                <input class="cadastro-input"type="password" id="pass-confirm" name="senhaC" placeholder="Confirme a senha" autocomplete="off">
                 <i class="bx bx-lock-alt"></i>
 
                 <input class="botao-send" type="submit" id="botao-cadastrar" placeholder="Enviar">
